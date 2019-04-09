@@ -1,0 +1,24 @@
+
+<div class="container">
+    Country filter: <input type="text" [(ngModel)]="countryName">
+    <button (click)="getSpotList()" class="primary-btn search-btn">Search</button>
+</div>
+
+<div>
+    <table class="the-table">
+        <tr class="header">
+            <th>ID</th>
+            <th>Country</th>
+            <th>Is favorite</th>
+            <th>Name</th>
+            <th>When to go</th>
+        </tr>
+        <tr *ngFor = 'let spot of spotList' (click)="openCard(spot)" class="table-content" [ngClass]="{'favorite': spot.isFavorite}">
+            <td>{{spot.id}}</td>
+            <td>{{spot.country}}</td>
+            <td>{{spot.isFavorite ? 'Yes' : 'No'}}</td>
+            <td>{{spot.name}}</td>
+            <td>{{spot.whenToGo}}</td>
+        </tr>
+    </table>
+</div>

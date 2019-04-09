@@ -1,0 +1,48 @@
+table {
+    border-collapse: collapse; 
+    /* border: 2px solid #444; */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    white-space: nowrap;
+}
+
+td, th {
+    padding: 10px 20px;
+}
+
+tr:nth-child(odd) {
+    background: #EEE;
+}
+
+tr:nth-child(even) {
+    background: #FFF;
+}
+
+tr:hover {
+    background: #CCC;
+}
+
+.header {
+    background: #444 !important;
+    color: #FFF;
+    text-align: left;
+}
+
+.favorite {
+    background:#edd86f !important;
+}
+
+.the-table {
+    margin: auto;
+}
+
+.search-btn {
+    margin: 25px;
+}
+
+.container {
+    text-align: center;
+}

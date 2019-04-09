@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+
+* {
+    font-family: 'Heebo', sans-serif;
+}
+
+.primary-btn {
+    padding: 8px 25px;
+    border-radius: 3px;
+    background: #6180c4;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #3959a1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,18 @@
+
+<h1 mat-dialog-title>{{data.name}}</h1>
+<h4 class="country-title">{{data.country}}</h4>
+<div mat-dialog-content>
+  <p class="subtitle">WIND PROBABILITY</p>
+  <p class="answer">{{data.windProbability}}%</p>
+  <p class="subtitle">LATITUDE</p>
+  <p class="answer">{{data.latitude}}N</p>
+  <p class="subtitle">LONGITUDE</p>
+  <p class="answer">{{data.longitude}}W</p>
+  <p class="subtitle">WHEN TO GO</p>
+  <p class="answer">{{data.whenToGo}}</p>
+</div>
+<div mat-dialog-actions>
+  <button *ngIf="data.isFavorite == false" (click)="onCloseClick(true)" class="primary-btn">Add to favorites</button>
+  <button *ngIf="data.isFavorite == true" (click)="onCloseClick(false)" class="primary-btn">Remove from favorites</button>
+</div>
+
